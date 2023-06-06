@@ -58,7 +58,7 @@ header {
 
 code {
     display: block;
-    background-color: rgb(242, 242, 242);
+    background-color: rgb(237, 237, 237);
     padding: 1.25rem 1rem;
     border-radius: 5px;
     margin-left: 0.5rem;
@@ -66,4 +66,23 @@ code {
     white-space: pre-line;
     font-size: 0.85rem;
     letter-spacing: 0.1rem;
+}
+
+@media only screen and (max-width: 850px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        border-bottom: solid grey;
+        border-right: none;
+        width: 100%;
+        line-height: 2.7rem;
+        font-size: 1.25rem;
+        height: 25rem;
+        overflow: scroll;
+    }
+
+    main {
+        margin-left: 1.5rem;
+    }
 }
